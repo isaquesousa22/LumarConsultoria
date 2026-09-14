@@ -1,0 +1,419 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #b9bbbd;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+
+
+
+header {
+    width: 100%;
+    background: #b9bbbd;
+    border-bottom: 1px solid #e5e7eb;
+    position: relative;
+    z-index: 10;
+}
+
+header nav {
+    max-width: 1200px;
+    margin: auto;
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 35px;
+    padding: 0 25px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #334155;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+header nav a:hover {
+    color: #0f5c8d;
+}
+
+
+
+
+.hero-planejamento {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 25px;
+}
+
+.hero-planejamento span {
+    color: #0f5c8d;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero-planejamento h1 {
+    max-width: 750px;
+    font-size: clamp(38px, 5vw, 62px);
+    line-height: 1.15;
+    color: #0f172a;
+    margin-bottom: 25px;
+}
+
+.hero-planejamento p {
+    max-width: 650px;
+    color: #64748b;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 28px;
+    border-radius: 8px;
+    background: #0f5c8d;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #0b456a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(15, 92, 141, 0.2);
+}
+
+
+
+
+.sobre-planejamento {
+    background: #b9bbbd;
+    padding: 100px 25px;
+}
+
+.sobre-planejamento > div {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.sobre-planejamento span {
+    color: #0f5c8d;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.sobre-planejamento h2 {
+    max-width: 700px;
+    font-size: 38px;
+    line-height: 1.2;
+    color: #0f172a;
+    margin: 12px 0 25px;
+}
+
+.sobre-planejamento p {
+    max-width: 800px;
+    color: #64748b;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+
+
+
+.solucoes {
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 25px;
+}
+
+.solucoes > span {
+    color: #0f5c8d;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.solucoes > h2 {
+    font-size: 38px;
+    line-height: 1.2;
+    max-width: 650px;
+    margin: 12px 0 50px;
+    color: #0f172a;
+}
+
+
+
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.card {
+    background: #ffffff;
+
+    padding: 35px;
+
+    border-radius: 14px;
+
+    border: 1px solid #e5e7eb;
+
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+
+    border-color: #0f5c8d;
+
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+}
+
+.card h3 {
+    font-size: 21px;
+    color: #0f172a;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #64748b;
+
+    font-size: 15px;
+}
+
+
+
+.como-funciona {
+    background: #b9bbbd;
+    padding: 100px 25px;
+    text-align: center;
+}
+
+.como-funciona > span {
+    color: #0f5c8d;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.como-funciona > h2 {
+    font-size: 38px;
+    line-height: 1.2;
+    color: #0f172a;
+    max-width: 650px;
+    margin: 12px auto 60px;
+}
+
+
+
+
+.etapas {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.etapa {
+    text-align: left;
+    padding: 30px;
+    border-left: 2px solid #0f5c8d;
+}
+
+.etapa strong {
+    display: block;
+    color: #0f5c8d;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.etapa h3 {
+    color: #0f172a;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.etapa p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+
+
+
+.cta {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 70px 40px;
+    border-radius: 20px;
+    background: #0f5c8d;
+    text-align: center;
+    color: #ffffff;
+}
+
+.cta h2 {
+    font-size: 36px;
+
+    margin-bottom: 15px;
+}
+
+.cta p {
+    max-width: 600px;
+
+    margin: 0 auto 30px;
+
+    color: #e0f2fe;
+}
+
+.cta .btn {
+    background: #ffffff;
+
+    color: #0f5c8d;
+}
+
+.cta .btn:hover {
+    background: #f1f5f9;
+}
+
+
+
+footer {
+    background: #0f172a;
+    color: #94a3b8;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 14px;
+}
+
+
+
+
+@media (max-width: 900px) {
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .etapas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-planejamento {
+        min-height: 450px;
+    }
+
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    header nav {
+        justify-content: center;
+        gap: 18px;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    header nav a {
+        font-size: 13px;
+    }
+
+
+    .hero-planejamento {
+        min-height: 450px;
+
+        padding: 60px 20px;
+    }
+
+    .hero-planejamento h1 {
+        font-size: 38px;
+    }
+
+    .hero-planejamento p {
+        font-size: 16px;
+    }
+
+
+    .sobre-planejamento {
+        padding: 70px 20px;
+    }
+
+    .sobre-planejamento h2 {
+        font-size: 30px;
+    }
+
+
+    .solucoes {
+        padding: 70px 20px;
+    }
+
+    .solucoes > h2 {
+        font-size: 30px;
+
+        margin-bottom: 35px;
+    }
+
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    .como-funciona {
+        padding: 70px 20px;
+    }
+
+    .como-funciona > h2 {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+
+    .etapas {
+        grid-template-columns: 1fr;
+    }
+
+
+    .cta {
+        margin: 50px 20px;
+
+        padding: 50px 25px;
+    }
+
+    .cta h2 {
+        font-size: 28px;
+    }
+
+}
+

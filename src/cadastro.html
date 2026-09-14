@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Parceiros</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen bg-[#b9bbbd] flex items-center justify-center py-10">
+
+    <div class="card w-full max-w-lg bg-base-200 shadow-2xl">
+
+        <div class="card-body">
+
+            <div class="text-center mb-6">
+
+                <h1 class="text-3xl font-bold">
+                    Cadastro de Parceiro
+                </h1>
+
+                <p class="text-gray-400 mt-2">
+                    Preencha seus dados para fazer parte da Lumar Corretora.
+                </p>
+
+            </div>
+
+            <form onsubmit="registrar(); return false;" class="space-y-4">
+
+                <label class="form-control">
+
+                    <span class="label-text mb-2">Nome</span>
+
+                    <input id="nome" type="text" class="input input-bordered w-full"
+                        placeholder="Digite o nome da empresa" required>
+
+                </label>
+
+                <label class="form-control">
+
+                    <span class="label-text mb-2">Telefone</span>
+
+                    <input id="telefone" type="tel" class="input input-bordered w-full" placeholder="(11) 99999-9999"
+                        required>
+
+                </label>
+
+                <label class="form-control">
+
+                    <span class="label-text mb-2">Endereço</span>
+
+                    <input id="endereco" type="text" class="input input-bordered w-full"
+                        placeholder="Rua, número e bairro" required>
+
+                </label>
+
+                <label class="form-control">
+
+                    <span class="label-text mb-2">E-mail</span>
+
+                    <input id="email" type="email" class="input input-bordered w-full" placeholder="exemplo@email.com"
+                        required>
+
+                </label>
+
+                <label class="form-control">
+
+                    <span class="label-text mb-2">Senha</span>
+
+                    <input id="senha" type="password" class="input input-bordered w-full" placeholder="••••••••"
+                        required>
+
+                </label>
+
+                <label class="form-control">
+
+                    <span class="label-text mb-2">CPF ou CNPJ</span>
+
+                    <input id="cpfCnpj" type="text" class="input input-bordered w-full"
+                        placeholder="Digite seu CPF ou CNPJ" required>
+
+                </label>
+
+                <label class="form-control">
+
+                    <span class="label-text mb-2">Descrição</span>
+
+                    <textarea id="descricao" class="textarea textarea-bordered h-28"
+                        placeholder="Descreva sua empresa"></textarea>
+
+                </label>
+
+                <div class="flex gap-3 pt-4">
+
+                    <a href="index.html" class="btn btn-neutral flex-1">
+                        Cancelar
+                    </a>
+
+                    <button type="submit" class="btn btn-primary flex-1">
+                        Criar Conta
+                    </button>
+
+                </div>
+
+                <p id="mensagem" class="text-center mt-4"></p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script type="module" src="/src/js/cadastro.js"></script>
+
+</body>
+
+</html>
