@@ -40,6 +40,7 @@ window.registrar = async function () {
             cpfCnpj,
             descricao,
             status: "pendente",
+            tipo: "parceiro",
             criadoEm: serverTimestamp()
 
         });

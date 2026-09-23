@@ -15,7 +15,7 @@ onAuthStateChanged(auth, async (user) => {
     console.log("USER:", user);
 
     if (!user) {
-        window.location.href = "/frontend/login.html";
+        window.location.href = "/src/login.html";
         return;
     }
 
@@ -58,7 +58,7 @@ onAuthStateChanged(auth, async (user) => {
 
         console.error("Erro ao verificar administrador:", error);
 
-        window.location.href = "/frontend/403.html";
+        window.location.href = "/src/403.html";
 
     }
 

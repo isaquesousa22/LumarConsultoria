@@ -48,7 +48,7 @@ snapshot.forEach((doc) => {
 
                 <button
                     class="btn btn-sm btn-primary"
-                    onclick="location.href='/frontend/admim/visualizarChamado.html?id=${doc.id}'">
+                    onclick="location.href='/src/admim/visualizarChamado.html?id=${doc.id}'">
 
                     Ver
 

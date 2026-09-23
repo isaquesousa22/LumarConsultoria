@@ -1,7 +1,7 @@
 import { db } from "../js/firebase.js";
 
 import {
-   collection,
+    collection,
     getDocs,
     query,
     where
@@ -17,7 +17,8 @@ async function carregarParceiros() {
 
     const q = query(
         collection(db, "usuarios"),
-        where("status", "==", "aprovado")
+        where("status", "==", "aprovado"),
+        where("tipo", "==", "parceiro")
     );
 
     const snapshot = await getDocs(q);
@@ -41,23 +42,23 @@ function mostrarParceiros() {
     const texto = pesquisa.value.toLowerCase();
 
     parceiros
-    .filter(p => {
+        .filter(p => {
 
-        return (
+            return (
 
-            p.nome.toLowerCase().includes(texto)
+                p.nome.toLowerCase().includes(texto)
 
-            ||
+                ||
 
-            p.endereco.toLowerCase().includes(texto)
+                p.endereco.toLowerCase().includes(texto)
 
-        );
+            );
 
-    })
+        })
 
-    .forEach(p => {
+        .forEach(p => {
 
-        cardsContainer.innerHTML += `
+            cardsContainer.innerHTML += `
 
         <div class="card bg-base-200 shadow-xl">
 
@@ -106,11 +107,11 @@ function mostrarParceiros() {
 
         `;
 
-    });
+        });
 
 }
 
-window.abrirMapa = function(endereco){
+window.abrirMapa = function (endereco) {
 
     window.open(
 
